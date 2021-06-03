@@ -20,10 +20,15 @@ Then:
 esy build
 ```
 
-to build the project. Now you should see a `_build` folder with all generated files, you can run
+to build the project. This command, as constructed in `esy.json`,
+
+1. generates a symbolically linked dir `bs-platform` in `node_modules`, which effectively makes `melange` the compiler behind the old `bsb` command, and then
+2. builds the project using the symbolically linked `bsb` command.
+
+Now you should see a `_build` folder with all generated files, you can run
 
 ```bash
 esy x node _build/default/src/Main.bs.js
 ```
 
-To see the result of the script running.
+to see the result of the script running.
