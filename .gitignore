@@ -7,3 +7,4 @@ _esy
 .merlin
 dune
 dune.bsb
+.melange.eobjs

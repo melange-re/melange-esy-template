@@ -7,7 +7,10 @@
   },
   "esy": {
     "buildsInSource": "unsafe",
-    "build": "bsb -make-world"
+    "build": [
+      "ln -sfn #{melange.install} node_modules/bs-platform",
+      "bsb -make-world"
+    ]
   },
   "installConfig": {
     "pnp": false
