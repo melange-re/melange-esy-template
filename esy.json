@@ -2,8 +2,11 @@
   "name": "melange-project",
   "dependencies": {
     "ocaml": "4.12.x",
-    "melange": "melange-re/melange",
-    "@opam/ocaml-lsp-server": "*"
+    "melange": "melange-re/melange"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "1.8.3",
+    "@opam/ocamlformat-rpc": "0.19.0"
   },
   "esy": {
     "buildsInSource": "unsafe",
