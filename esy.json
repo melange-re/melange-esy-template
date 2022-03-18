@@ -2,7 +2,9 @@
   "name": "melange-project",
   "dependencies": {
     "ocaml": "4.12.x",
-    "melange": "melange-re/melange",
+    "melange": "melange-re/melange#a175fc07893de23ecc18106904d9dd1eb1dfacce",
+    "@opam/cmdliner": "1.0.4",
+    "@opam/reason": "3.7.0",
     "@opam/ocaml-lsp-server": "*"
   },
   "esy": {
