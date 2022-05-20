@@ -1,7 +1,7 @@
 {
   "name": "melange-project",
   "dependencies": {
-    "ocaml": "4.12.x",
+    "ocaml": "4.12.0",
     "@opam/reason": "reasonml/reason:reason.opam#3.8.0",
     "melange": "melange-re/melange#0.1.0",
     "@opam/cmdliner": "1.1.0",
