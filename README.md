@@ -32,3 +32,14 @@ esy x node _build/default/src/Main.bs.js
 ```
 
 to see the result of the script running.
+
+To get editor support do the following:
+
+1. Install OCaml plugin https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform
+2. Build your project esy build
+3. Launch VSCode in your esy dev environment `esy code .`
+4. On the lefthand side, click OCaml extension icon
+5. Click "Select sandbox"
+6. Select "Custom" from the dropdown
+7. Pass the flag, the input box should contain $prog $args --fallback-read-dot-merlin
+
