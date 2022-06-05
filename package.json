@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "start": "parcel src/index.html --open"
+  },
+  "dependencies": {
+    "@rescript/react": "^0.10.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.0"
+  }
+}
