@@ -16,9 +16,9 @@ to install all dependencies and build the project.
 
 When run, `esy` will (as specified in `esy.json`):
 
-1. Generate a symbolically linked dir `bs-platform` in `node_modules`, which is
+1. Generate a symbolically linked dir `melange` in `node_modules`, which is
    necessary for JavaScript bundlers like Webpack to be able to find Melange
-   stdlib JavaScript files under `node_modules/bs-platform`.
+   stdlib JavaScript files under `node_modules/melange`.
 2. Build the project.
 3. Use `melange`'s watch mode to rebuild files when changed.
 
