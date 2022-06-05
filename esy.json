@@ -3,7 +3,7 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.1.0",
-    "melange": "melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef"
+    "melange": "melange-re/melange"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "*"
