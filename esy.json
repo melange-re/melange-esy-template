@@ -15,13 +15,13 @@
   "esy": {
     "buildsInSource": "unsafe",
     "build": [
-      "rm -rf node_modules/bs-platform",
-      "ln -sfn #{melange.install} node_modules/bs-platform",
+      "rm -rf node_modules/melange",
+      "ln -sfn #{melange.install} node_modules/melange",
       "mel build"
     ],
     "buildDev": [
-      "rm -rf node_modules/bs-platform",
-      "ln -sfn #{melange.install} node_modules/bs-platform",
+      "rm -rf node_modules/melange",
+      "ln -sfn #{melange.install} node_modules/melange",
       "mel build -w"
     ]
   },

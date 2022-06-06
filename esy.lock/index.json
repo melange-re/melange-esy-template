@@ -1,5 +1,5 @@
 {
-  "checksum": "260a8a970834a362e45bb4aeb5eae3ee",
+  "checksum": "221704384de943a35646839f376c9dd2",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.14.0@d41d8cd9": {
@@ -24,22 +24,22 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9",
-        "melange@github:melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef@d41d8cd9",
+        "melange@github:melange-re/melange#65c6e624457339e5ee8fd9d7d764b5e85594a9d2@d41d8cd9",
         "@opam/dune@opam:3.2.0@586e8442"
       ],
       "devDependencies": [ "@opam/ocaml-lsp-server@opam:1.11.6@31f0970f" ],
       "installConfig": { "pnp": false }
     },
-    "melange@github:melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef@d41d8cd9": {
+    "melange@github:melange-re/melange#65c6e624457339e5ee8fd9d7d764b5e85594a9d2@d41d8cd9": {
       "id":
-        "melange@github:melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef@d41d8cd9",
+        "melange@github:melange-re/melange#65c6e624457339e5ee8fd9d7d764b5e85594a9d2@d41d8cd9",
       "name": "melange",
       "version":
-        "github:melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef",
+        "github:melange-re/melange#65c6e624457339e5ee8fd9d7d764b5e85594a9d2",
       "source": {
         "type": "install",
         "source": [
-          "github:melange-re/melange#a310a2fd226b4fc77fedca19b465cadb1d9297ef"
+          "github:melange-re/melange#65c6e624457339e5ee8fd9d7d764b5e85594a9d2"
         ]
       },
       "overrides": [],
