@@ -6,5 +6,5 @@ _esy
 .bsb.lock
 .merlin
 dune
-dune.bsb
+dune.mel
 .melange.eobjs
