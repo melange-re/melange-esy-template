@@ -4,22 +4,23 @@ A simple project template using [Melange](https://github.com/melange-re/melange)
 
 ## Getting started
 
-You will need [esy](https://esy.sh) package manager to obtain OCaml and Melange sources. See `esy` installation instructions [here](https://esy.sh/docs/en/getting-started.html#install-esy).
+You will need `npm` installed, as well as the [esy](https://esy.sh) package
+manager to obtain OCaml and Melange sources. See `esy` installation instructions
+[here](https://esy.sh/docs/en/getting-started.html#install-esy).
 
-Once `esy` is available, run
+To get started:
 
-```bash
-esy
-```
+1. Run `npm install`.
+2. Run `esy`.
+3. For frontend development, run `npm start`.
 
-to install all dependencies and build the project.
-
-When run, `esy` will (as specified in `esy.json`):
+When run, `esy` will install the OCaml-based dependencies, and, as specified in
+`esy.json`:
 
 1. Generate a symbolically linked dir `melange` in `node_modules`, which is
    necessary for JavaScript bundlers like Webpack to be able to find Melange
    stdlib JavaScript files under `node_modules/melange`.
-2. Build the project.
+2. Compile the ReasonML/ReScript/OCaml source files to JavaScript.
 3. Use `melange`'s watch mode to rebuild files when changed.
 
 Now you should see a `_build` folder with all generated files, you can run
