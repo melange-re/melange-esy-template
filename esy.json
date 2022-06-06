@@ -3,7 +3,7 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.1.0",
-    "melange": "melange-re/melange#53a354a69172629033ce63d2d8eb9d8ea7ad1cdc"
+    "melange": "melange-re/melange"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "*"
@@ -15,9 +15,14 @@
   "esy": {
     "buildsInSource": "unsafe",
     "build": [
-      "rm -rf node_modules/bs-platform",
-      "ln -sfn #{melange.install} node_modules/bs-platform",
+      "rm -rf node_modules/melange",
+      "ln -sfn #{melange.install} node_modules/melange",
       "mel build"
+    ],
+    "buildDev": [
+      "rm -rf node_modules/melange",
+      "ln -sfn #{melange.install} node_modules/melange",
+      "mel build -w"
     ]
   },
   "installConfig": {
