@@ -2,37 +2,48 @@
 
 A simple project template using [Melange](https://github.com/melange-re/melange).
 
-## Getting started
+## Quick Start
 
-You will need `npm` installed, as well as the [esy](https://esy.sh) package
-manager to obtain OCaml and Melange sources. See `esy` installation instructions
-[here](https://esy.sh/docs/en/getting-started.html#install-esy).
+```shell
+npm install
 
-To get started:
-
-1. Run `npm install`.
-2. Run `esy`.
-3. For frontend development, run `npm start`.
-
-When run, `esy` will install the OCaml-based dependencies, and, as specified in
-`esy.json`:
-
-1. Generate a symbolically linked dir `melange` in `node_modules`, which is
-   necessary for JavaScript bundlers like Webpack to be able to find Melange
-   stdlib JavaScript files under `node_modules/melange`.
-2. Compile the ReasonML/ReScript/OCaml source files to JavaScript.
-3. Use `melange`'s watch mode to rebuild files when changed.
-
-Now you should see a `_build` folder with all generated files, you can run
-
-```bash
-node _build/default/src/Main.bs.js
+# In separate terminals:
+npm run build:watch
+npm run serve
 ```
-
-to see the result of [`src/Main.re`](src/Main.re).
 
 ### React
 
-This template includes React support via
-[`@rescript/react`](https://github.com/rescript-lang/rescript-react). Use `npm start` to run the dev server, then open `localhost:1234` to view the app defined
-in [`src/ReactApp.re`](src/ReactApp.re).
+React support is provided by
+[`@rescript/react`](https://github.com/rescript-lang/rescript-react). The entry
+point of the sample React app is [`src/ReactApp.re`](src/ReactApp.re).
+
+## Commands
+
+- `npm install` - installs the npm/JavaScript dependencies, including the `esy`
+  package manager (see below)
+- `npm run build:watch` - uses `esy` to:
+  - Install OCaml-based dependencies (e.g. OCaml and Melange)
+  - Symlink Melange's JavaScript runtime into `node_modules/melange`, so that
+    JavaScript bundlers like Webpack can find the files when they're imported
+  - Compile the project's ReasonML/OCaml/ReScript source files to JavaScript
+  - Rebuild files when changed (via Melange's built-in watch mode)
+- `npm run serve` - starts a dev server to serve the frontend app
+
+## JavaScript output
+
+Since Melange just compiles source files into JavaScript files, it can be used
+for projects on any JavaScript platform - not just the browser.
+
+All ReasonML/OCaml/ReScript source files under `src/` will be compiled to
+JavaScript and written to `_build/default/src/*` (along with some other build
+artifacts).
+
+For example, [`src/Hello.ml`](src/Hello.ml) (using OCaml syntax) and
+[`src/Main.re`](src/Main.re) (using ReasonML syntax) can each be run with
+`node`:
+
+```bash
+node _build/default/src/Hello.bs.js
+node _build/default/src/Main.bs.js
+```

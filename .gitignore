@@ -8,3 +8,4 @@ _esy
 dune
 dune.mel
 .melange.eobjs
+dist/

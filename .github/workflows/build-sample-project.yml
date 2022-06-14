@@ -1,0 +1,42 @@
+on:
+  pull_request:
+  push:
+   branches:
+     - master
+
+jobs:
+  build-sample-project:
+    name: Build sample project
+    strategy:
+      matrix:
+        system: [windows-latest, ubuntu-latest, macos-latest]
+      fail-fast: false
+    runs-on: ${{ matrix.system }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: current
+      - name: Restore cache
+        uses: actions/cache@v3
+        id: restore-cache
+        with:
+          # The entire ~/.esy directory has to be cached because esy's
+          # import/export commands don't import/export the Melange JS runtime
+          # files
+          path: ~/.esy
+          key: ${{ matrix.system }}-esy-${{ hashFiles('esy.lock/index.json') }}
+          restore-keys: |
+            ${{ matrix.system }}-esy-
+      - name: npm install
+        run: npm install
+      # Separating the esy steps provides more fine-grained insight when
+      # debugging failed jobs
+      - name: esy install
+        run: npx esy install
+      - name: Build esy dependencies
+        run: npx esy build-dependencies --release
+      - name: Build project
+        run: npx esy build --release
+      - name: Bundle JS app
+        run: npm run bundle

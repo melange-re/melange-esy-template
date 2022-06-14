@@ -1,0 +1,54 @@
+on:
+  schedule:
+    - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  update-esy-dependencies:
+    strategy:
+      matrix:
+        system: [ubuntu-latest]
+    runs-on: ${{ matrix.system }}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: current
+      - name: npm install
+        run: npm install
+      - name: Remove lockfile
+        run: rm -rf esy.lock
+      # Separating the esy steps provides more fine-grained insight when
+      # debugging failed jobs
+      - name: Update esy dependencies (esy install)
+        run: npx esy install
+      - name: Check if any dependencies were updated
+        id: check-for-updates
+        run: test -n "$(git status --porcelain)"
+        continue-on-error: true
+      - name: Build esy dependencies
+        if: steps.check-for-updates.outcome == 'success'
+        run: npx esy build-dependencies --release
+      - name: Build project
+        if: steps.check-for-updates.outcome == 'success'
+        run: npx esy build --release
+      - name: Bundle JS app
+        if: steps.check-for-updates.outcome == 'success'
+        run: npm run bundle
+      - name: Create pull request to update dependencies
+        if: steps.check-for-updates.outcome == 'success'
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: Update esy dependencies
+          branch: update-esy-dependencies
+          delete-branch: true
+          title: Update esy dependencies
+      - name: Cache dependencies
+        if: steps.check-for-updates.outcome == 'success'
+        uses: actions/cache@v3
+        with:
+          # The entire ~/.esy directory has to be cached because esy's
+          # import/export commands don't import/export the Melange JS runtime
+          # files
+          path: ~/.esy
+          key: ${{ matrix.system }}-esy-${{ hashFiles('esy.lock/index.json') }}

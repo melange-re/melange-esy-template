@@ -6,9 +6,11 @@
     "melange": "melange-re/melange"
   },
   "devDependencies": {
+    "@opam/dot-merlin-reader": "*",
     "@opam/ocaml-lsp-server": "*"
   },
   "resolutions": {
+    "@opam/ocaml-lsp-server": "ocaml/ocaml-lsp:ocaml-lsp-server.opam#c275140",
     "@opam/omd": "EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1",
     "@opam/reason": "reasonml/reason:reason.opam#a93c4c3fbf36d32360a64f9b7a3f64b0ef35b903"
   },
@@ -18,14 +20,10 @@
       "rm -rf node_modules/melange",
       "ln -sfn #{melange.install} node_modules/melange",
       "mel build"
-    ],
-    "buildDev": [
-      "rm -rf node_modules/melange",
-      "ln -sfn #{melange.install} node_modules/melange",
-      "mel build -w"
     ]
   },
-  "installConfig": {
-    "pnp": false
-  }
+  "scripts": {
+    "build:watch": "esy mel build -w"
+  },
+  "installConfig": { "pnp": false }
 }
