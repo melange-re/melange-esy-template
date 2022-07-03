@@ -10,8 +10,7 @@
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
   "resolutions": {
-    "@opam/omd": "EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1",
-    "@opam/reason": "reasonml/reason:reason.opam#a93c4c3fbf36d32360a64f9b7a3f64b0ef35b903"
+    "@opam/omd": "EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1"
   },
   "esy": {
     "buildsInSource": "unsafe",
