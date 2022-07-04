@@ -1,5 +1,5 @@
 {
-  "checksum": "240c4661759d21ec594f5e9234a1156e",
+  "checksum": "5b92a4f97ab0020c94c69eefb6123db7",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.14.0@d41d8cd9": {
@@ -448,29 +448,33 @@
         "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.3.1@37a83374"
       ]
     },
-    "@opam/omd@github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1@d41d8cd9": {
-      "id":
-        "@opam/omd@github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1@d41d8cd9",
+    "@opam/omd@opam:1.3.1@a0702cc6": {
+      "id": "@opam/omd@opam:1.3.1@a0702cc6",
       "name": "@opam/omd",
-      "version":
-        "github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1",
+      "version": "opam:1.3.1",
       "source": {
         "type": "install",
         "source": [
-          "github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1"
-        ]
+          "archive:https://opam.ocaml.org/cache/md5/84/845fc38e86ec0e85721130f2dd044d00#md5:845fc38e86ec0e85721130f2dd044d00",
+          "archive:https://github.com/Chris00/omd/releases/download/1.3.1/omd-1.3.1.tar.gz#md5:845fc38e86ec0e85721130f2dd044d00"
+        ],
+        "opam": {
+          "name": "omd",
+          "version": "1.3.1",
+          "path": "esy.lock/opam/omd.1.3.1"
+        }
       },
       "overrides": [],
       "dependencies": [
-        "@opam/dune@opam:3.3.1@37a83374",
-        "@opam/camlp-streams@opam:5.0.1@daaa0f94",
-        "@opam/bigarray-compat@opam:1.1.0@84cda9d0",
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c4562efc",
+        "@opam/ocamlbuild@opam:0.14.1@ead10f40",
+        "@opam/base-bytes@opam:base@19d0c2ff",
+        "@opam/base-bigarray@opam:base@b03491b0",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "@opam/dune@opam:3.3.1@37a83374",
-        "@opam/camlp-streams@opam:5.0.1@daaa0f94",
-        "@opam/bigarray-compat@opam:1.1.0@84cda9d0"
+        "ocaml@4.14.0@d41d8cd9", "@opam/base-bytes@opam:base@19d0c2ff",
+        "@opam/base-bigarray@opam:base@b03491b0"
       ]
     },
     "@opam/octavius@opam:1.2.2@2205cc65": {
@@ -602,7 +606,7 @@
         "@opam/spawn@opam:v0.15.1@85e9d6f1", "@opam/re@opam:1.10.4@c4910ba6",
         "@opam/ppx_yojson_conv_lib@opam:v0.15.0@773058a7",
         "@opam/pp@opam:1.1.2@89ad03b5", "@opam/ordering@opam:3.3.1@f93bff61",
-        "@opam/omd@github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1@d41d8cd9",
+        "@opam/omd@opam:1.3.1@a0702cc6",
         "@opam/octavius@opam:1.2.2@2205cc65",
         "@opam/ocamlformat-rpc-lib@opam:0.22.4@a64a22f6",
         "@opam/fiber@opam:3.3.1@1f343083", "@opam/dyn@opam:3.3.1@f7e40101",
@@ -618,7 +622,7 @@
         "@opam/spawn@opam:v0.15.1@85e9d6f1", "@opam/re@opam:1.10.4@c4910ba6",
         "@opam/ppx_yojson_conv_lib@opam:v0.15.0@773058a7",
         "@opam/pp@opam:1.1.2@89ad03b5", "@opam/ordering@opam:3.3.1@f93bff61",
-        "@opam/omd@github:EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1@d41d8cd9",
+        "@opam/omd@opam:1.3.1@a0702cc6",
         "@opam/octavius@opam:1.2.2@2205cc65",
         "@opam/ocamlformat-rpc-lib@opam:0.22.4@a64a22f6",
         "@opam/fiber@opam:3.3.1@1f343083", "@opam/dyn@opam:3.3.1@f7e40101",
@@ -1132,31 +1136,6 @@
       ],
       "devDependencies": [ "ocaml@4.14.0@d41d8cd9" ]
     },
-    "@opam/camlp-streams@opam:5.0.1@daaa0f94": {
-      "id": "@opam/camlp-streams@opam:5.0.1@daaa0f94",
-      "name": "@opam/camlp-streams",
-      "version": "opam:5.0.1",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/md5/af/afc874b25f7a1f13e8f5cfc1182b51a7#md5:afc874b25f7a1f13e8f5cfc1182b51a7",
-          "archive:https://github.com/ocaml/camlp-streams/archive/v5.0.1.tar.gz#md5:afc874b25f7a1f13e8f5cfc1182b51a7"
-        ],
-        "opam": {
-          "name": "camlp-streams",
-          "version": "5.0.1",
-          "path": "esy.lock/opam/camlp-streams.5.0.1"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.3.1@37a83374",
-        "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.3.1@37a83374"
-      ]
-    },
     "@opam/bigarray-compat@opam:1.1.0@84cda9d0": {
       "id": "@opam/bigarray-compat@opam:1.1.0@84cda9d0",
       "name": "@opam/bigarray-compat",
@@ -1235,6 +1214,45 @@
           "name": "base-threads",
           "version": "base",
           "path": "esy.lock/opam/base-threads.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/base-bytes@opam:base@19d0c2ff": {
+      "id": "@opam/base-bytes@opam:base@19d0c2ff",
+      "name": "@opam/base-bytes",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-bytes",
+          "version": "base",
+          "path": "esy.lock/opam/base-bytes.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c4562efc",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@c4562efc"
+      ]
+    },
+    "@opam/base-bigarray@opam:base@b03491b0": {
+      "id": "@opam/base-bigarray@opam:base@b03491b0",
+      "name": "@opam/base-bigarray",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-bigarray",
+          "version": "base",
+          "path": "esy.lock/opam/base-bigarray.base"
         }
       },
       "overrides": [],

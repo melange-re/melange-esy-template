@@ -9,9 +9,6 @@
     "@opam/dot-merlin-reader": "*",
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
-  "resolutions": {
-    "@opam/omd": "EduardoRFS/omd:omd.opam#7b866aacbc119e2be54b2dfcd198b860d3c497b1"
-  },
   "esy": {
     "buildsInSource": "unsafe",
     "build": [
