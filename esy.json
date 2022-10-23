@@ -14,7 +14,7 @@
     "build": [
       "rm -rf node_modules/melange",
       "ln -sfn #{melange.lib}/melange/runtime node_modules/melange",
-      "mel build"
+      "mel build -- --root=."
     ]
   },
   "scripts": {
