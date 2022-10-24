@@ -30,10 +30,10 @@ build: [
 dev-repo: "git+https://github.com/ocaml-ppx/ocamlformat.git"
 url {
   src:
-    "https://github.com/ocaml-ppx/ocamlformat/releases/download/0.22.4/ocamlformat-0.22.4.tbz"
+    "https://github.com/ocaml-ppx/ocamlformat/releases/download/0.24.1/ocamlformat-0.24.1.tbz"
   checksum: [
-    "sha256=eb54de2b81ac7cc2e68d81a7dc80b391a81b737fcfa3ef969ea91bdad6c9c060"
-    "sha512=2bdeb9abc5757176040f641b22c59ac2b038c3bc1c42ddf86422b80cb90278fbe8ca05d0f788be0375a632bb6584b8d165d07f9f84686c2174208a8c20324b13"
+    "sha256=023425e9818f80ea50537b2371a4a766c149a9957d05807e88a004d2d5f441ce"
+    "sha512=753b6128be68042895202f99959b360ce954db6f82b19b83b4bb346761a8e9cfdfc2b4b25e2070e60601b555562e78f9ebb02760ff127464e0b66cedbddca304"
   ]
 }
-x-commit-hash: "838ba9fa00cc27703441220b9a5d3880b17430fb"
+x-commit-hash: "86938aa4435b251af1a3b081f7fbed90f982cf62"
