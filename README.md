@@ -1,6 +1,9 @@
-# melange-basic-template
+# melange-esy-template
 
-A simple project template using [Melange](https://github.com/melange-re/melange).
+A simple project template using [Melange](https://github.com/melange-re/melange)
+with [esy](https://esy.sh/).
+
+If you are looking for a template with opam, check [melange-opam-template](https://github.com/melange-re/melange-opam-template).
 
 ## Quick Start
 
