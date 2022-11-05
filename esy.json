@@ -3,6 +3,7 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.5.0",
+    "@opam/melange": "*",
     "@opam/mel": "*"
   },
   "devDependencies": {
@@ -13,7 +14,7 @@
     "buildsInSource": "unsafe",
     "build": [
       "rm -rf node_modules/melange",
-      "ln -sfn #{melange.lib}/melange/runtime node_modules/melange",
+      "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
       "mel build"
     ]
   },
