@@ -3,7 +3,8 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.5.0",
-    "melange": "melange-re/melange"
+    "@opam/melange": "*",
+    "@opam/mel": "*"
   },
   "devDependencies": {
     "@opam/dot-merlin-reader": "*",
@@ -13,12 +14,14 @@
     "buildsInSource": "unsafe",
     "build": [
       "rm -rf node_modules/melange",
-      "ln -sfn #{melange.lib}/melange/runtime node_modules/melange",
+      "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
       "mel build"
     ]
   },
   "scripts": {
-    "build:watch": "esy mel build -w"
+    "build:watch": "mel build -w"
   },
-  "installConfig": { "pnp": false }
+  "installConfig": {
+    "pnp": false
+  }
 }
