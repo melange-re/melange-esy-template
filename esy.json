@@ -3,7 +3,7 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.5.0",
-    "melange": "melange-re/melange"
+    "@opam/mel": "*"
   },
   "devDependencies": {
     "@opam/dot-merlin-reader": "*",
@@ -18,7 +18,9 @@
     ]
   },
   "scripts": {
-    "build:watch": "esy mel build -w"
+    "build:watch": "mel build -w"
   },
-  "installConfig": { "pnp": false }
+  "installConfig": {
+    "pnp": false
+  }
 }
