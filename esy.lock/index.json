@@ -1,5 +1,5 @@
 {
-  "checksum": "6e9fa65213973d6a86e852d329b3a446",
+  "checksum": "5d415d00acfa5ba21ee00747067136b9",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.14.0@d41d8cd9": {
@@ -23,11 +23,12 @@
       "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/melange@opam:0.2.0@339249b0",
-        "@opam/mel@opam:0.2.0@b87c6928", "@opam/dune@opam:3.5.0@fba55e5e"
+        "ocaml@4.14.0@d41d8cd9", "@opam/reason@opam:3.8.2@19b5db6d",
+        "@opam/melange@opam:0.2.0@339249b0", "@opam/mel@opam:0.2.0@b87c6928",
+        "@opam/dune@opam:3.5.0@fba55e5e"
       ],
       "devDependencies": [
-        "@opam/ocaml-lsp-server@opam:1.13.1@c47cf6e0",
+        "@opam/ocaml-lsp-server@opam:1.14.1@ac41cc96",
         "@opam/dot-merlin-reader@opam:4.6@cc370300"
       ],
       "installConfig": { "pnp": false }
@@ -558,20 +559,20 @@
       ],
       "devDependencies": [ "ocaml@4.14.0@d41d8cd9" ]
     },
-    "@opam/ocaml-lsp-server@opam:1.13.1@c47cf6e0": {
-      "id": "@opam/ocaml-lsp-server@opam:1.13.1@c47cf6e0",
+    "@opam/ocaml-lsp-server@opam:1.14.1@ac41cc96": {
+      "id": "@opam/ocaml-lsp-server@opam:1.14.1@ac41cc96",
       "name": "@opam/ocaml-lsp-server",
-      "version": "opam:1.13.1",
+      "version": "opam:1.14.1",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/e5/e55f5bd88a5be2ff325fbc3b98eb7317d64de12b3f59d8c812e3ea2824fd0cfc#sha256:e55f5bd88a5be2ff325fbc3b98eb7317d64de12b3f59d8c812e3ea2824fd0cfc",
-          "archive:https://github.com/ocaml/ocaml-lsp/releases/download/1.13.1/lsp-1.13.1.tbz#sha256:e55f5bd88a5be2ff325fbc3b98eb7317d64de12b3f59d8c812e3ea2824fd0cfc"
+          "archive:https://opam.ocaml.org/cache/sha256/e6/e64c4c33dd037791fcc9bedfd4d615dda6d169e3eaced150f365539dacab69d9#sha256:e64c4c33dd037791fcc9bedfd4d615dda6d169e3eaced150f365539dacab69d9",
+          "archive:https://github.com/ocaml/ocaml-lsp/releases/download/1.14.1/lsp-1.14.1.tbz#sha256:e64c4c33dd037791fcc9bedfd4d615dda6d169e3eaced150f365539dacab69d9"
         ],
         "opam": {
           "name": "ocaml-lsp-server",
-          "version": "1.13.1",
-          "path": "esy.lock/opam/ocaml-lsp-server.1.13.1"
+          "version": "1.14.1",
+          "path": "esy.lock/opam/ocaml-lsp-server.1.14.1"
         }
       },
       "overrides": [],
