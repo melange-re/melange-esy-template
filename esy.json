@@ -11,16 +11,17 @@
     "@opam/dot-merlin-reader": "*",
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
+  "resolutions": {
+    "@opam/melange": "melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158",
+    "@opam/mel": "melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158"
+  },
   "esy": {
     "buildsInSource": "unsafe",
     "build": [
       "rm -rf node_modules/melange",
       "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
       "mel build"
-    ],
-    "buildEnv": {
-      "MELANGELIB": "#{@opam/melange.lib / 'melange' / 'melange'}"
-    }
+    ]
   },
   "scripts": {
     "build:watch": "mel build -w"
