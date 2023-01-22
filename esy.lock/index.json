@@ -1,5 +1,5 @@
 {
-  "checksum": "38c158419b570f96331e8709e541c353",
+  "checksum": "5d415d00acfa5ba21ee00747067136b9",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.14.0@d41d8cd9": {
@@ -24,8 +24,7 @@
       "overrides": [],
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/reason@opam:3.8.2@19b5db6d",
-        "@opam/melange@github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
-        "@opam/mel@github:melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
+        "@opam/melange@opam:0.3.2@a07dbc04", "@opam/mel@opam:0.3.2@7ab0e28d",
         "@opam/dune@opam:3.6.1@662f326b"
       ],
       "devDependencies": [
@@ -765,6 +764,39 @@
         "@opam/dune@opam:3.6.1@662f326b"
       ]
     },
+    "@opam/meldep@opam:0.3.2@924d6583": {
+      "id": "@opam/meldep@opam:0.3.2@924d6583",
+      "name": "@opam/meldep",
+      "version": "opam:0.3.2",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/sha256/2e/2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14",
+          "archive:https://github.com/melange-re/melange/releases/download/0.3.2/melange-0.3.2.tbz#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14"
+        ],
+        "opam": {
+          "name": "meldep",
+          "version": "0.3.2",
+          "path": "esy.lock/opam/meldep.0.3.2"
+        }
+      },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.14.0@d41d8cd9",
+        "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
+        "@opam/dune@opam:3.6.1@662f326b", "@opam/cppo@opam:1.6.9@db929a12",
+        "@opam/cmdliner@opam:1.1.1@03763729",
+        "@opam/base64@opam:3.5.0@8dc81d26",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.14.0@d41d8cd9",
+        "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
+        "@opam/dune@opam:3.6.1@662f326b",
+        "@opam/cmdliner@opam:1.1.1@03763729",
+        "@opam/base64@opam:3.5.0@8dc81d26"
+      ]
+    },
     "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48": {
       "id": "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
       "name": "@opam/melange-compiler-libs",
@@ -791,48 +823,58 @@
         "@opam/dune@opam:3.6.1@662f326b"
       ]
     },
-    "@opam/melange@github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9": {
-      "id": "@opam/melange@github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
+    "@opam/melange@opam:0.3.2@a07dbc04": {
+      "id": "@opam/melange@opam:0.3.2@a07dbc04",
       "name": "@opam/melange",
-      "version": "github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158",
+      "version": "opam:0.3.2",
       "source": {
         "type": "install",
         "source": [
-          "github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158"
-        ]
+          "archive:https://opam.ocaml.org/cache/sha256/2e/2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14",
+          "archive:https://github.com/melange-re/melange/releases/download/0.3.2/melange-0.3.2.tbz#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14"
+        ],
+        "opam": {
+          "name": "melange",
+          "version": "0.3.2",
+          "path": "esy.lock/opam/melange.0.3.2"
+        }
       },
       "overrides": [],
       "dependencies": [
-        "ocaml@4.14.0@d41d8cd9",
+        "ocaml@4.14.0@d41d8cd9", "@opam/meldep@opam:0.3.2@924d6583",
         "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
         "@opam/dune@opam:3.6.1@662f326b", "@opam/cppo@opam:1.6.9@db929a12",
         "@opam/cmdliner@opam:1.1.1@03763729",
-        "@opam/base64@opam:3.5.0@8dc81d26",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9",
+        "ocaml@4.14.0@d41d8cd9", "@opam/meldep@opam:0.3.2@924d6583",
         "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
         "@opam/dune@opam:3.6.1@662f326b",
-        "@opam/cmdliner@opam:1.1.1@03763729",
-        "@opam/base64@opam:3.5.0@8dc81d26"
+        "@opam/cmdliner@opam:1.1.1@03763729"
       ]
     },
-    "@opam/mel@github:melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9": {
-      "id": "@opam/mel@github:melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
+    "@opam/mel@opam:0.3.2@7ab0e28d": {
+      "id": "@opam/mel@opam:0.3.2@7ab0e28d",
       "name": "@opam/mel",
-      "version": "github:melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158",
+      "version": "opam:0.3.2",
       "source": {
         "type": "install",
         "source": [
-          "github:melange-re/melange:mel.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158"
-        ]
+          "archive:https://opam.ocaml.org/cache/sha256/2e/2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14",
+          "archive:https://github.com/melange-re/melange/releases/download/0.3.2/melange-0.3.2.tbz#sha256:2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14"
+        ],
+        "opam": {
+          "name": "mel",
+          "version": "0.3.2",
+          "path": "esy.lock/opam/mel.0.3.2"
+        }
       },
       "overrides": [],
       "dependencies": [
         "ocaml@4.14.0@d41d8cd9",
         "@opam/ocaml-migrate-parsetree@opam:2.4.0@5109deb9",
-        "@opam/melange@github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
+        "@opam/melange@opam:0.3.2@a07dbc04",
         "@opam/luv@opam:0.5.11@ad29ad88", "@opam/dune@opam:3.6.1@662f326b",
         "@opam/cmdliner@opam:1.1.1@03763729",
         "@esy-ocaml/substs@0.0.1@d41d8cd9"
@@ -840,7 +882,7 @@
       "devDependencies": [
         "ocaml@4.14.0@d41d8cd9",
         "@opam/ocaml-migrate-parsetree@opam:2.4.0@5109deb9",
-        "@opam/melange@github:melange-re/melange:melange.opam#0b2da209cf3c14dd22b2f333b5fa75f5115ba158@d41d8cd9",
+        "@opam/melange@opam:0.3.2@a07dbc04",
         "@opam/luv@opam:0.5.11@ad29ad88", "@opam/dune@opam:3.6.1@662f326b",
         "@opam/cmdliner@opam:1.1.1@03763729"
       ]
