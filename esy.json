@@ -19,7 +19,7 @@
       "mel build"
     ],
     "buildEnv": {
-      "MELANGELIB": "#{@opam/melange.lib / 'melange'}"
+      "MELANGELIB": "#{@opam/melange.lib / 'melange' / 'melange'}"
     }
   },
   "scripts": {
