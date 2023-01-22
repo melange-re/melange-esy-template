@@ -1,6 +1,6 @@
 opam-version: "2.0"
 synopsis:
-  "Melange counterpart to `ocamldep` that understands Melange-specific constructs"
+  "Build system for Melange that defers to Dune for build orchestration"
 maintainer: ["Antonio Nuno Monteiro <anmonteiro@gmail.com>"]
 authors: ["Antonio Nuno Monteiro <anmonteiro@gmail.com>"]
 license: "LGPL-2.1-or-later"
@@ -9,10 +9,11 @@ bug-reports: "https://github.com/melange-re/melange/issues"
 depends: [
   "dune" {>= "3.5"}
   "ocaml"
-  "cppo" {build}
-  "base64" {>= "3.1.0"}
+  "melange" {= version}
   "cmdliner" {>= "1.1.0"}
-  "melange-compiler-libs" {>= "0.0.1-414"}
+  "luv" {>= "0.5.11"}
+  "ocaml-migrate-parsetree" {>= "2.3.0"}
+  "ounit" {with-test}
   "odoc" {with-doc}
 ]
 build: [
@@ -32,10 +33,10 @@ build: [
 dev-repo: "git+https://github.com/melange-re/melange.git"
 url {
   src:
-    "https://github.com/melange-re/melange/releases/download/0.3.1/melange-0.3.1.tbz"
+    "https://github.com/melange-re/melange/releases/download/0.3.2/melange-0.3.2.tbz"
   checksum: [
-    "sha256=b9cbcc9193e523f493ea96b95dfb0d70b077290d9342ee2201214406dbd537c0"
-    "sha512=e07282ced49c1a799116252e0fbcd3db608ce1b412f181a7b868faed20f83a6a0fea3b66be8613a81671eac7a6184fc2743483eb69b7fb6e285dcf672821360e"
+    "sha256=2e74738f624bec755860f09eeb4f446fec16290ab5c5db452645ba003c7b6d14"
+    "sha512=0c45111206dd8e4684e3036788f9ef352b3dddff55705a21c1d04271438a5d0166322e43eefe517d68c9c00390cf5bdb2d166dd2537c38f8af8815718bac0b4a"
   ]
 }
-x-commit-hash: "db4e70ce7d690309ec9b451062cc762163f9a288"
+x-commit-hash: "01aa3e8566e848ed54550ba4289a061cdb72c2f6"

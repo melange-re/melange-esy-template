@@ -16,11 +16,8 @@
     "build": [
       "rm -rf node_modules/melange",
       "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
-      "mel build"
-    ],
-    "buildEnv": {
-      "MELANGELIB": "#{@opam/melange.lib / 'melange'}"
-    }
+      "mel build -- --display=short"
+    ]
   },
   "scripts": {
     "build:watch": "mel build -w"
