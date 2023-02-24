@@ -16,8 +16,8 @@
     "buildsInSource": "unsafe",
     "build": [
       "rm -rf node_modules/melange",
-      "ln -sfn #{@opam/melange.lib}/melange/runtime node_modules/melange",
-      "mel build -- --display=short"
+      "ln -sfn #{@opam/melange.lib}/melange/mel_runtime node_modules/melange",
+      "mel build -- --display=short --root=."
     ]
   },
   "scripts": {
