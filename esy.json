@@ -3,7 +3,7 @@
   "dependencies": {
     "ocaml": "4.14.0",
     "@opam/dune": ">= 3.5.0",
-    "@opam/findlib": "1.9.5",
+    "@opam/ocamlfind": "1.9.5",
     "@opam/reason": "*",
     "@opam/melange": "*",
     "@opam/mel": "*"
