@@ -6,9 +6,9 @@
     "serve": "webpack serve --open --mode development --entry ./_build/default/src/ReactApp.bs.js"
   },
   "dependencies": {
-    "@rescript/react": "^0.10.3",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "reason-react": "^0.10.0"
   },
   "devDependencies": {
     "esy": "^0.6.12",

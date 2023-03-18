@@ -8,12 +8,12 @@
   "package-specs": {
     "module": "commonjs"
   },
-  "suffix": ".bs.js",
+  "suffix": ".js",
   "reason": {
     "react-jsx": 3
   },
   "bs-dependencies": [
-    "@rescript/react"
+    "reason-react"
   ],
   "warnings": {
     "error": "+101"
