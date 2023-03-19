@@ -6,7 +6,8 @@
     "@opam/ocamlfind": "1.9.5",
     "@opam/reason": "*",
     "@opam/melange": "*",
-    "@opam/mel": "*"
+    "@opam/mel": "*",
+    "@opam/reactjs-jsx-ppx": "*"
   },
   "devDependencies": {
     "@opam/dot-merlin-reader": "*",
