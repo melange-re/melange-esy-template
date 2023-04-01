@@ -6,7 +6,7 @@
     "@opam/ocamlfind": "1.9.5",
     "@opam/reason": "*",
     "@opam/melange": "*",
-    "@opam/mel": "*",
+    "@opam/melange-compiler-libs": "*",
     "@opam/reactjs-jsx-ppx": "*"
   },
   "devDependencies": {
@@ -14,11 +14,9 @@
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
   "esy": {
-    "buildsInSource": "unsafe",
+    "buildsInSource": "_build",
     "build": [
-      "rm -rf node_modules/melange",
-      "ln -sfn #{@opam/melange.lib}/melange/mel_runtime node_modules/melange",
-      "mel build -- --display=short --root=."
+      "dune build @react"
     ]
   },
   "scripts": {
@@ -28,6 +26,8 @@
     "pnp": false
   },
   "resolutions": {
+    "@opam/melange": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b",
+    "@opam/melange-compiler-libs": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b",
     "@opam/reactjs-jsx-ppx": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b"
   }
 }
