@@ -26,5 +26,8 @@
   },
   "installConfig": {
     "pnp": false
+  },
+  "resolutions": {
+    "@opam/reactjs-jsx-ppx": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b"
   }
 }
