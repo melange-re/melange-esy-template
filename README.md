@@ -47,6 +47,6 @@ For example, [`src/Hello.ml`](src/Hello.ml) (using OCaml syntax) and
 `node`:
 
 ```bash
-node _build/default/src/Hello.bs.js
-node _build/default/src/Main.bs.js
+node _build/default/src/node/src/Hello.js
+node _build/default/src/node/src/Main.js
 ```
