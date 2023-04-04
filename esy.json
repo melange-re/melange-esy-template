@@ -20,14 +20,15 @@
     ]
   },
   "scripts": {
-    "build:watch": "mel build -w"
+    "build:watch": "dune build @react -w"
   },
   "installConfig": {
     "pnp": false
   },
   "resolutions": {
-    "@opam/melange": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b",
-    "@opam/melange-compiler-libs": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b",
-    "@opam/reactjs-jsx-ppx": "git+https://github.com/melange-re/melange.git#68c6eff82ed056feed809d6cc82558e8697b965b"
+    "@opam/dune": "ocaml/dune:dune.opam#4245029f2914bcfdca915e9916a5155a0afa95fb",
+    "@opam/melange": "melange-re/melange:melange.opam#68c6eff82ed056feed809d6cc82558e8697b965b",
+    "@opam/melange-compiler-libs": "melange-re/melange-compiler-libs:melange-compiler-libs.opam#7263bea2285499f5da857f2bb374345a5178791e",
+    "@opam/reactjs-jsx-ppx": "melange-re/melange:reactjs-jsx-ppx.opam#68c6eff82ed056feed809d6cc82558e8697b965b"
   }
 }
