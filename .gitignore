@@ -2,6 +2,5 @@
 node_modules
 _build
 _esy
-_opam
 .merlin
 dist/
