@@ -18,7 +18,7 @@ npm run serve
 ### React
 
 React support is provided by
-[`@rescript/react`](https://github.com/rescript-lang/rescript-react). The entry
+[`reason/react`](https://github.com/reasonml/reason-react/). The entry
 point of the sample React app is [`src/ReactApp.re`](src/ReactApp.re).
 
 ## Commands
@@ -47,6 +47,6 @@ For example, [`src/Hello.ml`](src/Hello.ml) (using OCaml syntax) and
 `node`:
 
 ```bash
-node _build/default/src/Hello.bs.js
-node _build/default/src/Main.bs.js
+node _build/default/src/node/src/Hello.js
+node _build/default/src/node/src/Main.js
 ```
