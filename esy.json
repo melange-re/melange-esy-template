@@ -12,6 +12,11 @@
   "devDependencies": {
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
+  "resolutions": {
+    "@opam/melange": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
+    "@opam/reactjs-jsx-ppx": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
+    "@opam/reason-react": "reasonml/reason-react:reason-react.opam#27de44aed71ca4ccc902952e6a3203d663a23bcb"
+  },
   "esy": {
     "buildsInSource": "_build",
     "build": [
