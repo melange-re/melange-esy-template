@@ -2,16 +2,14 @@
   "name": "melange-project",
   "dependencies": {
     "ocaml": "4.14.0",
-    "@opam/dune": ">= 3.5.0",
+    "@opam/dune": ">= 3.8.0",
     "@opam/ocamlfind": "1.9.5",
     "@opam/reason": "*",
     "@opam/melange": "*",
-    "@opam/melange-compiler-libs": "*",
     "@opam/reactjs-jsx-ppx": "*",
     "@opam/reason-react": "*"
   },
   "devDependencies": {
-    "@opam/dot-merlin-reader": "*",
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
   "esy": {

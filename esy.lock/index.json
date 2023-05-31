@@ -1,5 +1,5 @@
 {
-  "checksum": "00a1adda5c4f18a852fc3fee6ad2944d",
+  "checksum": "edb408b3be491017376c2ddc6686b1ac",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@4.14.0@d41d8cd9": {
@@ -28,14 +28,10 @@
         "@opam/reason@opam:3.8.2@19b5db6d",
         "@opam/reactjs-jsx-ppx@link-dev:../reactjs-jsx-ppx.opam",
         "@opam/ocamlfind@opam:1.9.5@e83abf74",
-        "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
         "@opam/melange@link-dev:../melange.opam",
         "@opam/dune@opam:3.8.0@4684a408"
       ],
-      "devDependencies": [
-        "@opam/ocaml-lsp-server@opam:1.15.0-4.14@663142c5",
-        "@opam/dot-merlin-reader@opam:4.9@5d77f68f"
-      ],
+      "devDependencies": [ "@opam/ocaml-lsp-server@opam:1.14.0@874387aa" ],
       "installConfig": { "pnp": false }
     },
     "@opam/yojson@opam:2.1.0@157478b0": {
@@ -788,32 +784,6 @@
       ],
       "devDependencies": [ "ocaml@4.14.0@d41d8cd9" ]
     },
-    "@opam/ocamlc-loc@opam:3.6.2@edc950a7": {
-      "id": "@opam/ocamlc-loc@opam:3.6.2@edc950a7",
-      "name": "@opam/ocamlc-loc",
-      "version": "opam:3.6.2",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/b6/b6d4ab848efb04aa2a325d0015d32ed4414ed7130ec7aa12f98158eff445cf3c#sha256:b6d4ab848efb04aa2a325d0015d32ed4414ed7130ec7aa12f98158eff445cf3c",
-          "archive:https://github.com/ocaml/dune/releases/download/3.6.2/dune-3.6.2.tbz#sha256:b6d4ab848efb04aa2a325d0015d32ed4414ed7130ec7aa12f98158eff445cf3c"
-        ],
-        "opam": {
-          "name": "ocamlc-loc",
-          "version": "3.6.2",
-          "path": "esy.lock/opam/ocamlc-loc.3.6.2"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dyn@opam:3.6.2@38120dfc",
-        "@opam/dune@opam:3.8.0@4684a408", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dyn@opam:3.6.2@38120dfc",
-        "@opam/dune@opam:3.8.0@4684a408"
-      ]
-    },
     "@opam/ocamlbuild@opam:0.14.2@c6163b28": {
       "id": "@opam/ocamlbuild@opam:0.14.2@c6163b28",
       "name": "@opam/ocamlbuild",
@@ -841,20 +811,20 @@
       ],
       "devDependencies": [ "ocaml@4.14.0@d41d8cd9" ]
     },
-    "@opam/ocaml-lsp-server@opam:1.15.0-4.14@663142c5": {
-      "id": "@opam/ocaml-lsp-server@opam:1.15.0-4.14@663142c5",
+    "@opam/ocaml-lsp-server@opam:1.14.0@874387aa": {
+      "id": "@opam/ocaml-lsp-server@opam:1.14.0@874387aa",
       "name": "@opam/ocaml-lsp-server",
-      "version": "opam:1.15.0-4.14",
+      "version": "opam:1.14.0",
       "source": {
         "type": "install",
         "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/b7/b778672c85a4a69451de31d5aef370f80851179c56b80688fd6f588923cd5b63#sha256:b778672c85a4a69451de31d5aef370f80851179c56b80688fd6f588923cd5b63",
-          "archive:https://github.com/ocaml/ocaml-lsp/releases/download/1.15.0-4.14/lsp-1.15.0-4.14.tbz#sha256:b778672c85a4a69451de31d5aef370f80851179c56b80688fd6f588923cd5b63"
+          "archive:https://opam.ocaml.org/cache/sha256/fe/fee3f7d36e3f688a69879a63689c23de24d6120452e6d1249f3ead2a030ff515#sha256:fee3f7d36e3f688a69879a63689c23de24d6120452e6d1249f3ead2a030ff515",
+          "archive:https://github.com/ocaml/ocaml-lsp/releases/download/1.14.0/lsp-1.14.0.tbz#sha256:fee3f7d36e3f688a69879a63689c23de24d6120452e6d1249f3ead2a030ff515"
         ],
         "opam": {
           "name": "ocaml-lsp-server",
-          "version": "1.15.0-4.14",
-          "path": "esy.lock/opam/ocaml-lsp-server.1.15.0-4.14"
+          "version": "1.14.0",
+          "path": "esy.lock/opam/ocaml-lsp-server.1.14.0"
         }
       },
       "overrides": [],
@@ -868,7 +838,6 @@
         "@opam/omd@opam:1.3.2@511d53d2",
         "@opam/octavius@opam:1.2.2@2205cc65",
         "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e",
-        "@opam/ocamlc-loc@opam:3.6.2@edc950a7",
         "@opam/fiber@opam:3.6.2@349136be", "@opam/dyn@opam:3.6.2@38120dfc",
         "@opam/dune-rpc@opam:3.6.2@d874b9d2",
         "@opam/dune-build-info@opam:3.8.0@9045ef26",
@@ -886,7 +855,6 @@
         "@opam/omd@opam:1.3.2@511d53d2",
         "@opam/octavius@opam:1.2.2@2205cc65",
         "@opam/ocamlformat-rpc-lib@opam:0.25.1@fb9fa86e",
-        "@opam/ocamlc-loc@opam:3.6.2@edc950a7",
         "@opam/fiber@opam:3.6.2@349136be", "@opam/dyn@opam:3.6.2@38120dfc",
         "@opam/dune-rpc@opam:3.6.2@d874b9d2",
         "@opam/dune-build-info@opam:3.8.0@9045ef26",
@@ -917,32 +885,6 @@
       ],
       "devDependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.8.0@4684a408"
-      ]
-    },
-    "@opam/merlin-lib@opam:4.9-414@16618f99": {
-      "id": "@opam/merlin-lib@opam:4.9-414@16618f99",
-      "name": "@opam/merlin-lib",
-      "version": "opam:4.9-414",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/e2/e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd#sha256:e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd",
-          "archive:https://github.com/ocaml/merlin/releases/download/v4.9-414/merlin-4.9-414.tbz#sha256:e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd"
-        ],
-        "opam": {
-          "name": "merlin-lib",
-          "version": "4.9-414",
-          "path": "esy.lock/opam/merlin-lib.4.9-414"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.8.0@4684a408",
-        "@opam/csexp@opam:1.5.2@46614bf4", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/dune@opam:3.8.0@4684a408",
-        "@opam/csexp@opam:1.5.2@46614bf4"
       ]
     },
     "@opam/merlin-extend@opam:0.6.1@7d979feb": {
@@ -1045,32 +987,6 @@
       "devDependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/menhirSdk@opam:20230415@2aa219cc",
         "@opam/menhirLib@opam:20230415@78be630c",
-        "@opam/dune@opam:3.8.0@4684a408"
-      ]
-    },
-    "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48": {
-      "id": "@opam/melange-compiler-libs@opam:0.0.1-414@5e3cde48",
-      "name": "@opam/melange-compiler-libs",
-      "version": "opam:0.0.1-414",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/da/dad8d77adc458224aeaac72e52d0e8d04189c4913102dc21c329556120dff8b4#sha256:dad8d77adc458224aeaac72e52d0e8d04189c4913102dc21c329556120dff8b4",
-          "archive:https://github.com/melange-re/melange-compiler-libs/releases/download/0.0.1-414/melange-compiler-libs-0.0.1-414.tbz#sha256:dad8d77adc458224aeaac72e52d0e8d04189c4913102dc21c329556120dff8b4"
-        ],
-        "opam": {
-          "name": "melange-compiler-libs",
-          "version": "0.0.1-414",
-          "path": "esy.lock/opam/melange-compiler-libs.0.0.1-414"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/menhir@opam:20230415@ce1c9ac7",
-        "@opam/dune@opam:3.8.0@4684a408", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/menhir@opam:20230415@ce1c9ac7",
         "@opam/dune@opam:3.8.0@4684a408"
       ]
     },
@@ -1320,34 +1236,6 @@
       "devDependencies": [
         "ocaml@4.14.0@d41d8cd9", "@opam/base-unix@opam:base@87d0b2eb",
         "@opam/base-threads@opam:base@36803084"
-      ]
-    },
-    "@opam/dot-merlin-reader@opam:4.9@5d77f68f": {
-      "id": "@opam/dot-merlin-reader@opam:4.9@5d77f68f",
-      "name": "@opam/dot-merlin-reader",
-      "version": "opam:4.9",
-      "source": {
-        "type": "install",
-        "source": [
-          "archive:https://opam.ocaml.org/cache/sha256/e2/e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd#sha256:e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd",
-          "archive:https://github.com/ocaml/merlin/releases/download/v4.9-414/merlin-4.9-414.tbz#sha256:e23fc47813591269ff9d27c820988e520a662c89dd0af7ea652b21517499cbfd"
-        ],
-        "opam": {
-          "name": "dot-merlin-reader",
-          "version": "4.9",
-          "path": "esy.lock/opam/dot-merlin-reader.4.9"
-        }
-      },
-      "overrides": [],
-      "dependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@e83abf74",
-        "@opam/merlin-lib@opam:4.9-414@16618f99",
-        "@opam/dune@opam:3.8.0@4684a408", "@esy-ocaml/substs@0.0.1@d41d8cd9"
-      ],
-      "devDependencies": [
-        "ocaml@4.14.0@d41d8cd9", "@opam/ocamlfind@opam:1.9.5@e83abf74",
-        "@opam/merlin-lib@opam:4.9-414@16618f99",
-        "@opam/dune@opam:3.8.0@4684a408"
       ]
     },
     "@opam/csexp@opam:1.5.2@46614bf4": {
