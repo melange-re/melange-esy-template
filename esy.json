@@ -2,16 +2,20 @@
   "name": "melange-project",
   "dependencies": {
     "ocaml": "4.14.0",
-    "@opam/dune": ">= 3.5.0",
+    "@opam/dune": ">= 3.8.0",
     "@opam/ocamlfind": "1.9.5",
     "@opam/reason": "*",
     "@opam/melange": "*",
-    "@opam/melange-compiler-libs": "*",
-    "@opam/reactjs-jsx-ppx": "*"
+    "@opam/reactjs-jsx-ppx": "*",
+    "@opam/reason-react": "*"
   },
   "devDependencies": {
-    "@opam/dot-merlin-reader": "*",
     "@opam/ocaml-lsp-server": ">= 1.12.0"
+  },
+  "resolutions": {
+    "@opam/melange": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
+    "@opam/reactjs-jsx-ppx": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
+    "@opam/reason-react": "reasonml/reason-react:reason-react.opam#27de44aed71ca4ccc902952e6a3203d663a23bcb"
   },
   "esy": {
     "buildsInSource": "_build",
@@ -24,11 +28,5 @@
   },
   "installConfig": {
     "pnp": false
-  },
-  "resolutions": {
-    "@opam/dune": "ocaml/dune:dune.opam#66573762f28b84268cf04c3c46d0deaef9945316",
-    "@opam/melange": "melange-re/melange:melange.opam#4df18aaa5468391c4b190ebc5d4c3ba38698a565",
-    "@opam/melange-compiler-libs": "melange-re/melange-compiler-libs:melange-compiler-libs.opam#7263bea2285499f5da857f2bb374345a5178791e",
-    "@opam/reactjs-jsx-ppx": "melange-re/melange:reactjs-jsx-ppx.opam#4df18aaa5468391c4b190ebc5d4c3ba38698a565"
   }
 }

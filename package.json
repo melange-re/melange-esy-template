@@ -6,9 +6,8 @@
     "serve": "webpack serve --open --mode development --entry ./_build/default/src/output/src/ReactApp.js"
   },
   "dependencies": {
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "reason-react": "^0.10.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "esy": "^0.6.12",
