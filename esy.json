@@ -6,17 +6,15 @@
     "@opam/ocamlfind": "1.9.5",
     "@opam/ocamlbuild": "0.14.2",
     "@opam/reason": "*",
-    "@opam/melange": "*",
-    "@opam/reactjs-jsx-ppx": "*",
+    "@opam/melange": ">=1.0.0",
+    "@opam/reactjs-jsx-ppx": ">=1.0.0",
     "@opam/reason-react": "*"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": ">= 1.12.0"
   },
   "resolutions": {
-    "@opam/melange": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
-    "@opam/reactjs-jsx-ppx": "melange-re/melange:melange.opam#c989a91761a9b1bcc8af80fb9653eab897360325",
-    "@opam/reason-react": "reasonml/reason-react:reason-react.opam#27de44aed71ca4ccc902952e6a3203d663a23bcb"
+    "@opam/reason-react": "reasonml/reason-react:reason-react.opam#3bc13214350bef59e3c4e38d63de15d622459ce5"
   },
   "esy": {
     "buildsInSource": "_build",
