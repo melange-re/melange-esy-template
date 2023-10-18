@@ -5,15 +5,12 @@
     "@opam/dune": ">= 3.8.0",
     "@opam/ocamlfind": "1.9.6",
     "@opam/reason": "*",
-    "@opam/melange": "*",
+    "@opam/melange": "2.0.0",
     "@opam/reason-react": "*",
     "@opam/reason-react-ppx": "*"
   },
   "devDependencies": {
     "@opam/ocaml-lsp-server": "1.16.2"
-  },
-  "resolutions": {
-    "@opam/melange": "github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e"
   },
   "esy": {
     "buildsInSource": "_build",

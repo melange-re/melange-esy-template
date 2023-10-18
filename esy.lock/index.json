@@ -1,5 +1,5 @@
 {
-  "checksum": "eea4d1a90b82ff397b2283ecbf3be8dd",
+  "checksum": "f6938030e795bebdee98edb1bd898273",
   "root": "melange-project@link-dev:./esy.json",
   "node": {
     "ocaml@5.1.1@d41d8cd9": {
@@ -28,7 +28,7 @@
         "@opam/reason-react@opam:0.13.0@93b60fc7",
         "@opam/reason@opam:3.10.0@77493263",
         "@opam/ocamlfind@opam:1.9.6@da5169c7",
-        "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+        "@opam/melange@opam:2.0.0@e87a35d5",
         "@opam/dune@opam:3.11.1@ba2e0e6a"
       ],
       "devDependencies": [ "@opam/ocaml-lsp-server@opam:1.16.2@6e0031b9" ],
@@ -310,13 +310,13 @@
       "dependencies": [
         "ocaml@5.1.1@d41d8cd9", "@opam/reason@opam:3.10.0@77493263",
         "@opam/ppxlib@opam:0.31.0@1212d9eb",
-        "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+        "@opam/melange@opam:2.0.0@e87a35d5",
         "@opam/dune@opam:3.11.1@ba2e0e6a", "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
         "ocaml@5.1.1@d41d8cd9", "@opam/reason@opam:3.10.0@77493263",
         "@opam/ppxlib@opam:0.31.0@1212d9eb",
-        "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+        "@opam/melange@opam:2.0.0@e87a35d5",
         "@opam/dune@opam:3.11.1@ba2e0e6a"
       ]
     },
@@ -341,14 +341,14 @@
         "ocaml@5.1.1@d41d8cd9",
         "@opam/reason-react-ppx@opam:0.13.0@f0474824",
         "@opam/reason@opam:3.10.0@77493263",
-        "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+        "@opam/melange@opam:2.0.0@e87a35d5",
         "@opam/dune@opam:3.11.1@ba2e0e6a", "@esy-ocaml/substs@0.0.1@d41d8cd9"
       ],
       "devDependencies": [
         "ocaml@5.1.1@d41d8cd9",
         "@opam/reason-react-ppx@opam:0.13.0@f0474824",
         "@opam/reason@opam:3.10.0@77493263",
-        "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+        "@opam/melange@opam:2.0.0@e87a35d5",
         "@opam/dune@opam:3.11.1@ba2e0e6a"
       ]
     },
@@ -899,17 +899,27 @@
         "@opam/dune@opam:3.11.1@ba2e0e6a"
       ]
     },
-    "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9": {
-      "id": "@opam/melange@github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e@d41d8cd9",
+    "@opam/melange@opam:2.0.0@e87a35d5": {
+      "id": "@opam/melange@opam:2.0.0@e87a35d5",
       "name": "@opam/melange",
-      "version": "github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e",
+      "version": "opam:2.0.0",
       "source": {
         "type": "install",
         "source": [
-          "github:davesnx/melange:melange.opam#6bc87876d1aad68c9212dcc19fe7a5ca7654a69e"
-        ]
+          "archive:https://opam.ocaml.org/cache/sha256/0e/0e213624b1626428a181fa0fbb262eadffb24431e530ad06dca885c6f0cf1e55#sha256:0e213624b1626428a181fa0fbb262eadffb24431e530ad06dca885c6f0cf1e55",
+          "archive:https://github.com/melange-re/melange/releases/download/2.0.0/melange-2.0.0.tbz#sha256:0e213624b1626428a181fa0fbb262eadffb24431e530ad06dca885c6f0cf1e55"
+        ],
+        "opam": {
+          "name": "melange",
+          "version": "2.0.0",
+          "path": "esy.lock/opam/melange.2.0.0"
+        }
       },
-      "overrides": [],
+      "overrides": [
+        {
+          "opamoverride": "esy.lock/overrides/opam__s__melange_opam__c__2.0.0_opam_override"
+        }
+      ],
       "dependencies": [
         "ocaml@5.1.1@d41d8cd9", "@opam/ppxlib@opam:0.31.0@1212d9eb",
         "@opam/menhir@opam:20230608@c0081728",
