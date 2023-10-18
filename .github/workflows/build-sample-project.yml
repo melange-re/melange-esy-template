@@ -28,8 +28,6 @@ jobs:
           key: ${{ matrix.system }}-esy-${{ hashFiles('esy.lock/index.json') }}
           restore-keys: |
             ${{ matrix.system }}-esy-
-      - name: install esy
-        run: npm i -g esy@beta
       - name: npm install
         run: npm install
       # Separating the esy steps provides more fine-grained insight when
