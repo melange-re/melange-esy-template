@@ -3,8 +3,7 @@
   "dependencies": {
     "ocaml": "5.1.1",
     "@opam/dune": ">= 3.8.0",
-    "@opam/ocamlfind": "1.9.5",
-    "@opam/ocamlbuild": "0.14.2",
+    "@opam/ocamlfind": "1.9.6",
     "@opam/reason": "*",
     "@opam/melange": "*",
     "@opam/reason-react": "*",
