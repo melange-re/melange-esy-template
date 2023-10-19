@@ -1,3 +1,15 @@
+--- ./jscomp/others/dune
++++ ./jscomp/others/dune
+@@ -54,7 +54,7 @@
+   (progn
+    (with-stdout-to
+     %{target}
+-    (run awk -f %{dep:expand_module_aliases_node.awk} %{deps})))))
++    (bash "awk -f %{dep:expand_module_aliases_node.awk} %{deps}")))))
+ 
+ (library
+  (modes melange)
+
 --- ./jscomp/stdlib/dune
 +++ ./jscomp/stdlib/dune
 @@ -5,7 +5,7 @@
@@ -19,14 +31,3 @@
     (with-stdout-to
      %{target}
 
---- ./jscomp/others/dune
-+++ ./jscomp/others/dune
-@@ -51,7 +51,7 @@
-   (progn
-    (with-stdout-to
-     %{target}
--    (run awk -f %{dep:expand_module_aliases_node.awk} %{deps})))))
-+    (bash "awk -f %{dep:expand_module_aliases_node.awk} %{deps}"))))
-
- (library
-  (modes melange)
