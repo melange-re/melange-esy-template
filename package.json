@@ -6,7 +6,7 @@
     "serve": "webpack serve --open --mode development --entry ./_build/default/src/output/src/ReactApp.js"
   },
   "dependencies": {
-    "esy": "beta",
+    "esy": "0.7.2-beta.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
