@@ -1,17 +1,16 @@
 {
   "name": "melange-project",
   "dependencies": {
-    "ocaml": "4.14.0",
+    "ocaml": "5.1.1",
     "@opam/dune": ">= 3.8.0",
-    "@opam/ocamlfind": "1.9.5",
-    "@opam/ocamlbuild": "0.14.2",
+    "@opam/ocamlfind": "1.9.6",
     "@opam/reason": "*",
-    "@opam/melange": ">=1.0.0",
-    "@opam/reactjs-jsx-ppx": ">=1.0.0",
-    "@opam/reason-react": "0.11.0"
+    "@opam/melange": "2.0.0",
+    "@opam/reason-react": "*",
+    "@opam/reason-react-ppx": "*"
   },
   "devDependencies": {
-    "@opam/ocaml-lsp-server": ">= 1.12.0"
+    "@opam/ocaml-lsp-server": "1.16.2"
   },
   "esy": {
     "buildsInSource": "_build",
